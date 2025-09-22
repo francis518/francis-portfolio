@@ -13,17 +13,18 @@ function App() {
     </p>
   </header>
 
-      {/* Resume */}
-      <section style={{ marginTop: '40px' }}>
-        <h2>My Resume</h2>
-        <iframe
-          src="/Francis SD.pdf"
-          width="100%"
-          height="800px"
-          title="Resume"
-          style={{ border: "1px solid #ccc", marginTop: "20px" }}
-        ></iframe>
-      </section>
+        {/* Resume */}
+    <section style={{ marginTop: '40px' }}>
+      <h2>My Resume</h2>
+      <iframe
+        src={`${process.env.PUBLIC_URL}/Francis SD.pdf`}
+        width="100%"
+        height="800px"
+        title="Resume"
+        style={{ border: "1px solid #ccc", marginTop: "20px" }}
+      ></iframe>
+    </section>
+
 
       {/* Project Case Study */}
       <section style={{ marginTop: '60px' }}>
@@ -84,14 +85,6 @@ function App() {
           </ul>
         </div>
 
-        {/* Download Button */}
-        <div style={{ marginTop: '40px', textAlign: 'center' }}>
-          <a href="/Project Proposal 2.pdf" download>
-            <button style={{ padding: '12px 24px', fontSize: '16px', cursor: 'pointer', backgroundColor: '#4CAF50', color: 'white', border: 'none', borderRadius: '5px' }}>
-              Download Full Project Proposal
-            </button>
-          </a>
-        </div>
       </section>
 
       <section style={{ marginTop: '60px' }}>
